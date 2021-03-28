@@ -1,0 +1,111 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+}
+
+.iconoflecha {
+  margin-left: 10 px;
+}
+
+.letrasienav {
+  margin-left: 10px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.padded {
+  padding: 0px;
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.firstItem {
+  border-bottom: 2px solid #3f51b5;
+  font-size: 25px;
+}
+
+.botonSalir {
+  position: absolute;
+  right: 2%;
+}
+
+.textoFinal {
+  font-size: 16px;
+  position: absolute;
+  right: 15%;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 80% 20%;
+  padding: 5px;
+  border-radius: 2px;
+  background: #fff;
+  height: 821px;
+  /* box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%); */
+  box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 0);
+}
+
+.grid-item {
+  background: #fff;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.0);
+}
+
+.grid-container-uno {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+
+.textoDivTwo {
+  font-size: 25px;
+  margin: 25px;
+  position: absolute;
+  margin-top: 7px;
+}
+
+.divTwo {
+  padding: 10px;
+  margin: 10px;
+}
+
+.tamanioIcon {
+  font-size: 36px;
+}
+
+.centerButtons {
+  text-align: center
+}
+
+.textoFooter{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: #a0a0a0;
+  position: absolute;
+  right: 2%;
+}

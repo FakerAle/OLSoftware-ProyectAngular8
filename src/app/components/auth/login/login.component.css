@@ -1,0 +1,88 @@
+section {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section .principal {
+    background: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1402/Madrid-Spain-city-night-buildings-road-lights_1920x1200.jpg) center/cover no-repeat fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    clip-path: ellipse(43% 79% at 38% 21%);
+}
+
+.div-posicion {
+    margin-top: 293px;
+    margin-left: 60%;
+    position: absolute;
+}
+
+.mat-card-local {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 270px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: .3s;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #1176e2;
+    border-color: #1176e2;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    width: 80%;
+}
+
+.example-full-width-top {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.example-full-width {
+    width: 80%;
+}
+
+.textoCentro {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    margin-bottom: 19%;
+    margin-right: 48%;
+}
+
+.textoCentroDos {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    margin-bottom: 10%;
+    margin-right: 43%;
+}
+
+.textoFinal {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #a0a0a0;
+    position: fixed;
+    margin-top: 54%;
+}

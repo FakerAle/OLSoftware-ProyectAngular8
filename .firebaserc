@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngblog-98663": {
+      "hosting": {
+        "SofwarePrueba": [
+          "ngblog-98663"
+        ]
+      }
+    }
+  }
+}

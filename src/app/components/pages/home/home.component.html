@@ -1,0 +1,112 @@
+<div class="example-container">
+    <mat-sidenav-container class="full-height" autosize="true">
+        <mat-sidenav mode="side" opened (click)="toggleSidebar()">
+            <mat-nav-list>
+                <a class="with-icon padded firstItem" (click)="$event.stopPropagation()" mat-list-item>
+                    <mat-icon>{{fillerNavFirst.icon}}</mat-icon>
+                    <a [hidden]="collapse" class="letrasienav">{{fillerNavFirst.name}}</a>
+                </a>
+                <a class="with-icon padded" (click)="$event.stopPropagation()" mat-list-item routerLink="."
+                    *ngFor="let nav of fillerNav">
+                    <mat-icon (click)="toggleSidebar()">{{nav.icon}}</mat-icon>
+                    <a [hidden]="collapse" class="letrasienav" (click)="toggleSidebar()">{{nav.name}}</a>
+                    <mat-icon *ngIf="!collapse" class="iconoflecha" (click)="toggleSidebar()">{{nav.iconTwo}}
+                    </mat-icon>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="padded">
+            <mat-toolbar color="primary" class="example-toolbar">
+                <button mat-icon-button (click)="toggleSidebar()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <h1 class="example-app-name">Prueba Front - end</h1>
+
+                <button class="textoFinal" mat-icon-button>
+                    <mat-icon>account_circle</mat-icon> Jhon Alejandro Rios G
+                </button>
+
+                <button mat-icon-button class="botonSalir" (click)="onLogout()">
+                    <mat-icon>exit_to_app</mat-icon>
+                </button>
+
+            </mat-toolbar>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <app-table></app-table>
+                </div>
+
+                <div class="grid-item">
+
+                    <div class="divTwo">
+                        <mat-icon class="tamanioIcon">supervised_user_circle</mat-icon>
+                        <label class="textoDivTwo">Filtrar búsqueda</label>
+                    </div>
+
+                    <div class="grid-container-uno">
+
+                        <mat-form-field>
+                            <mat-label>Nombre</mat-label>
+                            <input matInput placeholder="Nombre">
+                        </mat-form-field>
+
+
+                        <mat-form-field>
+                            <mat-label>Apellido</mat-label>
+                            <input matInput placeholder="Apellido">
+                        </mat-form-field>
+
+
+                        <mat-form-field>
+                            <mat-label>Identificación (C.C)</mat-label>
+                            <input matInput placeholder="Identificación (C.C)">
+                        </mat-form-field>
+
+
+                        <mat-form-field>
+                            <mat-label>Rol asociado</mat-label>
+                            <input matInput placeholder="Rol asociado">
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <mat-label>Estado</mat-label>
+                            <input matInput placeholder="Estado">
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <mat-label>Contraseña</mat-label>
+                            <input matInput placeholder="Contraseña">
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <mat-label>Teléfono</mat-label>
+                            <input matInput placeholder="Teléfono">
+                        </mat-form-field>
+
+
+                        <mat-form-field>
+                            <mat-label>Correo electrónico</mat-label>
+                            <input matInput placeholder="Correo electrónico">
+                        </mat-form-field>
+
+                    </div>
+
+                    <div class="centerButtons">
+                        <button class="btn-primary" mat-raised-button color="primary">Filtrar</button>
+                        <button mat-button class="btn-primary">Limpiar</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <mat-toolbar class="example-footer">
+                <label class="textoFooter">OLSoftware - 2021</label>
+            </mat-toolbar>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

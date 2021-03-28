@@ -1,0 +1,66 @@
+<div>
+
+    <div class="textoPrincipal">
+        <mat-icon class="tamanioIcon" [inline]="true">supervised_user_circle</mat-icon>
+        <label class="textoFinal">Usuarios existentes</label>
+        <button class="btn-primary" type="submit" mat-raised-button color="primary" (click)="onNewPost()">Crear</button>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+        <!-- Tabla de contenido -principal -->
+        <ng-container matColumnDef="nombre">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombres </th>
+            <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="apellido">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Apellidos </th>
+            <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="identificador">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Identificación (C.C)</th>
+            <td mat-cell *matCellDef="let element"> {{element.identificador}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="rolAsociado">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Rol asociado</th>
+            <td mat-cell *matCellDef="let element"> {{element.rolAsociado}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="estado">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado</th>
+            <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="telefono">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> teléfono</th>
+            <td mat-cell *matCellDef="let element"> {{element.telefono}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="correo">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Correo </th>
+            <td mat-cell *matCellDef="let element"> {{element.correo}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Acción </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-icon-button class="botonSalir">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button class="botonSalir" (click)="eliminarUsuario(element)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10]" showFirstLastButtons></mat-paginator>
+</div>

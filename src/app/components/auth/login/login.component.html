@@ -1,0 +1,34 @@
+<section>
+    <div class="principal">
+        
+    </div>
+    <div class="div-posicion">
+        <mat-card class="mat-card-local">
+            <mat-card-title>Inicio de sesión</mat-card-title>
+            <mat-card-content>
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+                    <p>
+                        <mat-form-field class="example-full-width-top">
+                            <input matInput placeholder="Usuario" formControlName="email" />
+                            <mat-icon matSuffix>account_box</mat-icon>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field class="example-full-width">
+                            <input type="password" matInput placeholder="Contraseña" formControlName="password" />
+                            <mat-icon matSuffix>lock</mat-icon>
+                        </mat-form-field>
+                    </p>
+                    <button class="btn-primary" type="submit" mat-raised-button color="primary">Iniciar
+                        Sesión</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <label class="textoCentro">Aplicación<br>  OLSoftware</label>
+    <label class="textoCentroDos">Prueba práctica Front - end senior</label>
+    <label class="textoFinal">OLSoftware - 2021</label>
+
+    
+</section>
+

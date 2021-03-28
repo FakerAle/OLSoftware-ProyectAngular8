@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "SofwarePrueba",
+      "public": "dist/SofwarePrueba",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
