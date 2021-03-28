@@ -10,6 +10,10 @@ section {
 
 section .principal {
     background: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1402/Madrid-Spain-city-night-buildings-road-lights_1920x1200.jpg) center/cover no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
     width: 100%;
     text-align: center;
